@@ -1,0 +1,43 @@
+.admin {
+  background: #2f2f2f;
+  min-height: 100vh;
+  padding: 40px;
+  color: white;
+  h1 {
+    font-size: 32px;
+    color: #f59b00;
+    margin-bottom: 20px;
+    font-family: Poppins, sans-serif;
+  }
+  .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+
+  input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #f59b00;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #cc7c00;
+    }
+  }
+}
+}
+
+
+
