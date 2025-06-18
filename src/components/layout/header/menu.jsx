@@ -25,7 +25,7 @@ const Menu = () => {
           <NavLink to="/feature" className={({ isActive }) => (isActive ? s.active : '')}>Feature</NavLink>
           <NavLink to="/about" className={({ isActive }) => (isActive ? s.active : '')}>About</NavLink>
           <NavLink to="/product" className={({ isActive }) => (isActive ? s.active : '')}>Product</NavLink>
-                    <NavLink to="/admin" className={({ isActive }) => (isActive ? s.active : '')}>Admin</NavLink>
+          <NavLink to="/admin" className={({ isActive }) => (isActive ? s.active : '')}>Admin</NavLink>
         </nav>
       </div>
     </div>

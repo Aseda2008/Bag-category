@@ -102,41 +102,41 @@
 
 @media (max-width: 575px) {
   .home {
+    min-height: 85vh;
     .card {
                 margin: 20px 0;
 
       .left {
         position: relative;
         z-index: 3;
+         margin-top: 121px;
         h1 {
-          font-size: 30px;
+        font-size: 50px;
         }
 
         h3 {
-          font-size: 10px;
+          position: absolute;
+        top: -115px;
+        font-size: 18px;
         }
 
         p {
-          font-size: 12px;
+        font-size: 13px;
         }
 
         button {
-          width: 100px;
-          height: 30px;
-          font-size: 13px;
+        width: 132px;
+        height: 48px;
+          font-size: 15px;
         }
       }
 
       .rigth {
-
-position: absolute;
-        width: 301px;
-height: 325px;
-        right: 0;
-        img{
-            object-fit: cover;
-                
-        }
+        position: absolute;
+        width: 435px;
+        height: 583px;
+        right: -5px;
+        top: 81px;
       }
     }
   }

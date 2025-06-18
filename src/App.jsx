@@ -7,11 +7,12 @@ import { useSelector } from 'react-redux';
 import './App.module.scss';
 import Admin from './components/pages/admin/admin';
 import Product from './components/pages/product/product';
+import MainHome from './components/pages/mainHome/mainHome';
 function App() {
   const menuOpen = useSelector((state) => state.menuOpen);
 
   let router = [
-    { id: 1, path: "/", element: <Home /> },
+    { id: 1, path: "/", element: <MainHome /> },
      { id: 1, path: "/admin", element: <Admin /> },
        { id: 1, path: "/product", element: <Product /> },
   ];

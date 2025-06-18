@@ -39,5 +39,21 @@
 }
 }
 
+@media(max-width:574px){
+  .admin {
+    background: #2f2f2f;
+    min-height: 80vh;
+    padding: 40px;
+    color: white;
+    h1{
+          font-size: 27px;
+          text-align: center;
+              margin-bottom: 52px;
 
+    }
+    .form{
+          gap: 55px;
+    }
+}
+}
 

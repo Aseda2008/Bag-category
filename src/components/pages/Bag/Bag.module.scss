@@ -1,0 +1,107 @@
+.Bag{
+    margin: 60px 0 ;
+    .bag{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .bagImg{
+            width: 614px;
+            height: 492px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .block{
+            h3{
+                font-family: Poppins;
+font-weight: 500;
+font-size: 20px;
+color: #F59B00;
+text-transform: uppercase;
+
+            }
+            h1{
+                font-family: Poppins;
+font-weight: 700;
+font-size: 31px;
+color: #2F2F2F;
+text-transform: capitalize;
+margin: 10px 0;
+            }
+            p{
+                font-family: Poppins;
+font-weight: 400;
+font-size: 16px;
+text-transform: capitalize;
+color: #2F2F2F;
+            }
+            button{
+                background: #F59B00;
+                width: 134px;
+                height: 49px;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                color:white;
+                text-transform: capitalize;
+                margin-top: 20px;
+
+            }
+        }
+    }
+}
+@media(max-width:992px){
+    .Bag{
+        .bag{
+            .bagImg{
+                    width: 419px;
+                    height: 437px;
+            }
+            .block{
+                h3{
+                    font-size: 14px;
+                }
+                h1{
+                        font-size: 29px;
+                }
+                p{
+                        font-size: 12px;
+                }
+                 button {
+    width: 117px;
+    height: 38px;
+    margin-top: 21px;
+}
+            }
+        }
+    }
+}
+@media(max-width:575px){
+    .Bag{
+        .bag{
+        flex-direction: column;
+            .bagImg{
+        width: 357px;
+        height: 335px;
+
+            }
+            .block{
+                h3{
+        font-size: 18px;
+                }
+                h1{
+        font-size: 24px;
+                }
+                p{
+                        font-size: 12px;
+                }
+                 button {
+        width: 140px;
+        height: 45px;
+                font-size: 18px;
+}
+            }
+        }
+    }
+}
