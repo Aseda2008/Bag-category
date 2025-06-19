@@ -1,41 +1,33 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
+import s from "./product.module.scss";
 
 const Product = () => {
   const dispatch = useDispatch();
   const { product } = useSelector((s) => s);
-console.log(product,0);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const res = await axios.get('https://api-crud.elcho.dev/api/v1/e43c9-6cf6b-a54b6/bag');
-        dispatch({ type: "SET_PRODUCTS", payload: res.data });
-      } catch (error) {
-        console.error("APIден маалымат алуу катасы:", error);
-      }
-    };
-
-    fetchProducts();
-  }, [dispatch]);
-
+  
+  const addToCart = (item) => {
+    dispatch({ type: "ADD_TO_CART", payload: item });
+  };
   return (
-    <div>
-      <h1>Product List</h1>
-      {product.length === 0 ? (
-        <p>Продукттар табылган жок</p>
-      ) : (
-        <ul>
-          {product?.map((item, index) => (
-            <li key={index}>
-              <img src={item.url} alt={item.name} width="100" />
-              <p>{item.name}</p>
-              <p>{item.price} сом</p>
-            </li>
+    <div className={s.products}>
+      <div className="container">
+        <div className={s.product}>
+          <h1>Our Available Product</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br />
+            eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+
+        <div className={s.grid}>
+          {product.map((el) => (
+            <div className={s.block} key={el.id}>
+              <img src={el.url} alt="" />
+              <button onClick={() => addToCart(el)}>Add to Cart</button>
+            </div>
           ))}
-        </ul>
-      )}
+        </div>
+      </div>
     </div>
   );
 };
